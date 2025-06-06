@@ -1,32 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio da Olga</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png" alt="Avatar da Olga, estudante de programação" class="rounded-circle" width="150" height="150">
+        <p class="lead">Eu sou Olga_</p>
+        <h1>Estou aprendendo Programação</h1>
+        <p>Sou estudante de tecnologia. Estou aprendendo a criar sites com HTML, CSS, JavaScript e Scratch. Veja abaixo alguns dos meus projetos desenvolvidos durante os estudos!</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">Scratch</span>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                        <p class="card-text">Projeto que exibe uma coleção de livros favoritos com HTML e CSS, usando Google Fonts para um visual mais bonito.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto de IA interativa">
+                    <div class="card-body">
+                        <h5 class="card-title">Decidindo o Futuro: Narrativa Interativa com IA</h5>
+                        <p class="card-text">Um jogo interativo que permite refletir sobre o impacto da Inteligência Artificial na sociedade, com HTML, CSS e JavaScript.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3: NOVO PROJETO -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/projeto-receitas.png" class="card-img-top" alt="Imagem do site de receitas">
+                    <div class="card-body">
+                        <h5 class="card-title">Receitinhas da Olga: Um Site de Receitas Interativo</h5>
+                        <p class="card-text">Um site simples onde compartilho receitas favoritas com imagens, listas de ingredientes e modo de preparo interativo.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Página com HTML e CSS apresentando livros favoritos, autores, datas e links de compra. Layout responsivo e tipografia agradável.</p>
+                    <img src="img/projeto-1.png" class="img-fluid w-100" alt="Projeto de biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="#" target="_blank">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Decidindo o Futuro: Narrativa Interativa com IA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Projeto interativo com HTML, CSS e JavaScript. O usuário responde perguntas e muda a narrativa baseada em IA. Ideal para refletir sobre ética e tecnologia.</p>
+                    <img src="img/projeto-2.png" class="img-fluid w-100" alt="Projeto de narrativa sobre IA">
+                </div>
+                <div class="modal-footer">
+                    <a href="#" target="_blank">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: NOVO PROJETO -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Receitinhas da Olga: Um Site de Receitas Interativo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Um site feito com HTML, CSS e um pouco de JavaScript, onde é possível explorar receitas favoritas da Olga. Inclui imagens, modo de preparo passo a passo e um botão para marcar receitas favoritas.</p>
+                    <img src="img/projeto-receitas.png" class="img-fluid w-100" alt="Site de receitas da Olga">
+                </div>
+                <div class="modal-footer">
+                    <a href="#" target="_blank">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© 2024 - Criado por Olga</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
-<body>
-  <img src="img/avatar-perfil.png" alt="avatar da Fernanda" srcset="" />
-  <p>Eu sou Fernanda_</p>
-  <h1>Eu ensino Programação</h1>
-  <p>
-    Sou Engenheira de Computação e Pedagoga. Ensino pensamento computacional
-    para estudantes do Ensino Fundamental e Médio. Ensino sobre pensamento
-    computacional usando HTML, CSS e JavaScript. Veja os projetos que já
-    desenvolvi!
-  </p>
-  <p>Minhas habilidades</p>
-</body>
-<body>
-  <!-- código omitido -->
-  <p>Minhas habilidades</p>
-  <div>
-    <p>HTML</p>
-    <p>CSS</p>
-    <p>JavaScript</p>
-    <p>Scratch</p>
-  </div>
-</body>
